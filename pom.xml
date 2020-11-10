@@ -20,6 +20,7 @@
         <module>HelloJava</module>
         <module>HelloPHP</module>
         <module>HelloGetway</module>
+        <module>HelloSentinel</module>
     </modules>
 
     <dependencyManagement>
