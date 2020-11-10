@@ -1,0 +1,32 @@
+server:
+  port: 9011
+
+spring:
+  application:
+    name: hello-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      #config:
+        #server-addr: localhost:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启从注册中心动态创建路由的功能，利用微服务名进行路由
+      routes:
+        - id: hello-world
+          uri: http://localhost:9001
+          #uri: HelloWorld://hello-java-server
+          predicates:
+            - Path=/HelloWorld
+
+        - id: hello-java
+          uri: http://localhost:9002
+          predicates:
+            - Path=/HelloJava
+
+        - id: hello-php
+          uri: http://localhost:9003
+          predicates:
+            - Path=/HelloPHP
