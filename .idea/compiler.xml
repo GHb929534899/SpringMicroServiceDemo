@@ -9,6 +9,7 @@
         <module name="HelloGetway" />
         <module name="HelloPHP" />
         <module name="HelloJava" />
+        <module name="HelloSentinel" />
         <module name="HelloWorld" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="HelloGetway" options="-parameters" />
       <module name="HelloJava" options="-parameters" />
       <module name="HelloPHP" options="-parameters" />
+      <module name="HelloSentinel" options="-parameters" />
       <module name="HelloWorld" options="-parameters" />
     </option>
   </component>

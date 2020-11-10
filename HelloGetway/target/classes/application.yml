@@ -30,3 +30,8 @@ spring:
           uri: http://localhost:9003
           predicates:
             - Path=/HelloPHP
+
+        - id: hello-sentinel
+          uri: http://localhost:9012
+          predicates:
+            - Path=/HelloSentinel
