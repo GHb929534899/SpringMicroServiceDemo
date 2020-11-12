@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HelloGetway" />
+        <module name="HelloELK" />
         <module name="HelloPHP" />
         <module name="HelloJava" />
         <module name="HelloSentinel" />
@@ -16,6 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="HelloELK" options="-parameters" />
       <module name="HelloGetway" options="-parameters" />
       <module name="HelloJava" options="-parameters" />
       <module name="HelloPHP" options="-parameters" />

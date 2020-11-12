@@ -1,0 +1,10 @@
+server:
+  port: 9013
+
+spring:
+  application:
+    name: hello-elk
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848

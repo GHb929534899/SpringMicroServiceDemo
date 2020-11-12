@@ -21,6 +21,7 @@
         <module>HelloPHP</module>
         <module>HelloGetway</module>
         <module>HelloSentinel</module>
+        <module>HelloELK</module>
     </modules>
 
     <dependencyManagement>
@@ -72,6 +73,12 @@
                 <version>2.2.3.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>5.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

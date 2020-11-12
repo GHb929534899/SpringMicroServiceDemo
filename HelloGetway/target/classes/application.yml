@@ -35,3 +35,8 @@ spring:
           uri: http://localhost:9012
           predicates:
             - Path=/HelloSentinel
+
+        - id: hello-elk
+          uri: http://localhost:9013
+          predicates:
+            - Path=/HelloELK
