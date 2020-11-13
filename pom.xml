@@ -22,6 +22,7 @@
         <module>HelloGetway</module>
         <module>HelloSentinel</module>
         <module>HelloELK</module>
+        <module>HelloRocketMQ</module>
     </modules>
 
     <dependencyManagement>

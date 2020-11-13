@@ -13,16 +13,16 @@
         <!--param name="Encoding" value="UTF-8"/-->
         <!-- logstash服务器ip -->
         <!--remoteHost>127.0.0.1</remoteHost-->
-        <destination>127.0.0.1:9600</destination>
+        <destination>127.0.0.1:9601</destination>
         <!-- logstash tcp 端口
         <port>9600</port>-->
         <!-- <filter class="com.program.interceptor.ELKFilter"/>-->//引入过滤类
         <!-- encoder is required -->
-        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder" />
+        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder"/>
     </appender>
 
     <root level="info">
-        <appender-ref ref="consoleAppender" />
+        <appender-ref ref="consoleAppender"/>
         <appender-ref ref="logstash"/>
     </root>
 </configuration>

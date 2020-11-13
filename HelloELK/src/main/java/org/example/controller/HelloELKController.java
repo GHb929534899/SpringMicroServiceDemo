@@ -11,10 +11,10 @@ public class HelloELKController {
 
     @GetMapping("/HelloELK")
     public String helloELK() {
-        logger.info(Thread.currentThread().getStackTrace()[1].getMethodName()+"\tInfo log test.");
+        //logger.info(Thread.currentThread().getStackTrace()[1].getMethodName()+"\tInfo log test.");
         logger.debug("Debug log");
-        logger.error("Sorry, this is a test. No error on here.");
-        logger.warn("Sorry, this is a test. No warn on here.");
+        /*logger.error("Sorry, this is a test. No error on here.");
+        logger.warn("Sorry, this is a test. No warn on here.");*/
         return "Hello ELK";
     }
 }
